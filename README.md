@@ -7,3 +7,7 @@ The static route
 information is entered from the router’s configure terminal prompt (config)#, using 
 the ip route command, which has the following syntax:
  Router(config)# ip route [destination] [subnet mask] [next hop]
+ 
+Each static route can use a different subnet mask. This is accomplished using 
+variable-length subnet masking (VLSM). For example, one static route could have 
+subnet mask 255.255.255.0 and another could have subnet mask 255.255.255.252.
